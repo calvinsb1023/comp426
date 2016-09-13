@@ -1,0 +1,36 @@
+html {
+    width: 100%;
+    min-width: 860px;
+    background-color: #d3d3d3;
+}
+body {
+    height: 100%;
+    width: 860px;
+    margin: auto;
+    background-color: #ffffff;
+}
+.title {
+    font-family: Georgia, serif;
+    font-size: 25px;
+}
+.title-container {
+    width: 95%;
+    margin: auto;
+}
+.step {
+
+}
+.main-container {
+
+}
+.content-container {
+
+}
+.ingredient {
+
+}
+#ingredient-list {
+    border: 1px #d3d3d3;
+
+
+}
