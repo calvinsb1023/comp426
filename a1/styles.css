@@ -3,31 +3,48 @@ html {
     height: 100%;
     min-width: 860px;
     background-color: #d3d3d3;
+
 }
 body {
-    height: 100%;
-    width: 860px;
-    margin: auto;
-    background-color: #ffffff;
-    font-family: Verdana, sans-serif;
+    height: 120%;
+    width: 100%;
+    background-color: lightgrey;
+    background-image: -webkit-repeating-linear-gradient(135deg, rgba(0,0,0,.3), rgba(0,0,0,.3) 1px, transparent 2px, transparent 2px, rgba(0,0,0,.3) 3px);
+    background-image: -moz-repeating-linear-gradient(135deg, rgba(0,0,0,.3), rgba(0,0,0,.3) 1px, transparent 2px, transparent 2px, rgba(0,0,0,.3) 3px);
+    background-image: -o-repeating-linear-gradient(135deg, rgba(0,0,0,.3), rgba(0,0,0,.3) 1px, transparent 2px, transparent 2px, rgba(0,0,0,.3) 3px);
+    background-image: repeating-linear-gradient(135deg, rgba(0,0,0,.3), rgba(0,0,0,.3) 1px, transparent 2px, transparent 2px, rgba(0,0,0,.3) 3px);
+    -webkit-background-size: 4px 4px;
+    -moz-background-size: 4px 4px;
+    background-size: 4px 4px;
+}
+.title {
+    font-family: Georgia, serif;
+    color: white;
+    padding: 10px;
+    padding-left: 100px;
+    font-size: 25px;
 }
 
-.title {
-    color: white;
-    font-family: Georgia, serif;
-    font-size: 25px;
-    padding: 10px;
-}
 .title-container {
     background-color: #254252;
     width: 100%;
-    margin: auto;
+    //margin-left: -10px;
+    margin-top: -10px;
+}
+#step-title {
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 20px;
 }
 .step {
 
 }
 .main-container {
-
+    height: 90%;
+    width: 860px;
+    margin: auto;
+    background-color: white;
+    font-family: Verdana, sans-serif;
 }
 .content-container {
     padding: 10px;
@@ -38,28 +55,40 @@ body {
     height: 100%;
     width: 16%;
     padding: 10px;
+    border-left: solid lightgrey;
 }
 .col-4 {
     float: left;
     height: 100%;
     width: 31%;
-    padding: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
 }
-.col-6 {
+.col-8 {
     float: left;
     height: 100%;
-    width: 45%;
+    width: 65%;
     padding: 10px;
 }
-
-
+#ingredient-title {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+#ingredient-servings {
+    font-family: Verdana, sans-serif;
+    font-size: 50%;
+}
 .ingredient {
-
+    font-size: 75%;
 }
 .ingredient-container {
     width: 100%;
     border: solid 1px lightgrey;
     float: left;
+}
+.ingredient-container li {
+    padding-bottom: 10px;
+    padding-right: 10px;
 }
 .img-container {
     float: left;
@@ -67,8 +96,36 @@ body {
     width: 379px;
 
 }
+.author-title {
+    font-family: Georgia, serif;
+
+}
+.author-name {
+    font-style: italic;
+    font-size: 85%;
+}
+.author-container {
+
+}
+.author-pic {
+    float: left;
+    width: 200px;
+    height: auto;
+    filter: gray; /* IE6-9 */
+    filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+
+}
+.author-pic:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
+.author-bio {
+    float: right;
+    width: 350px;
+}
 #main-pic {
-    height: 100%;
     width: 100%;
+    height: auto;
     border: solid 1px lightgrey;
 }
