@@ -11,6 +11,7 @@ body {
     background-color: #ffffff;
     font-family: Verdana, sans-serif;
 }
+
 .title {
     color: white;
     font-family: Georgia, serif;
@@ -29,13 +30,45 @@ body {
 
 }
 .content-container {
+    padding: 10px;
 
 }
+.col-2 {
+    float: left;
+    height: 100%;
+    width: 16%;
+    padding: 10px;
+}
+.col-4 {
+    float: left;
+    height: 100%;
+    width: 31%;
+    padding: 10px;
+}
+.col-6 {
+    float: left;
+    height: 100%;
+    width: 45%;
+    padding: 10px;
+}
+
+
 .ingredient {
 
 }
-#ingredient-container {
-    border: 1px #d3d3d3;
+.ingredient-container {
+    width: 100%;
+    border: solid 1px lightgrey;
+    float: left;
+}
+.img-container {
+    float: left;
+    height: 213px;
+    width: 379px;
 
-
+}
+#main-pic {
+    height: 100%;
+    width: 100%;
+    border: solid 1px lightgrey;
 }
