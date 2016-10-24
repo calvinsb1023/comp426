@@ -1,0 +1,85 @@
+body {
+    font-family: "Courier New", monospace;
+//    background-color: black;
+}
+#gameboard {
+    width: 1200px;
+    height: 700px;
+    border: solid lightgray 1px;
+    //border: solid lawngreen 1px;
+    margin: auto;
+}
+#map-panel {
+    width: 700px;
+    height: 698px;
+//border: solid lightgray 1px;
+//    border: solid lawngreen 1px;
+    float: left;
+}
+#map-view {
+    width: 660px;
+    height: 660px;
+    margin: auto;
+    margin-top: 15px;
+border: solid lightgray 1px;
+//    border: solid lawngreen 1px;
+}
+#player-panel {
+    width: 490px;
+    height: 698px;
+    float: right;
+//border: solid lightgray 1px;
+//    border: solid lawngreen 1px;
+}
+#fire-view {
+    height: 75px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 70px;
+    border: solid lightgray 1px;
+    //color: white;
+    //border: solid red 1px;
+    //background-color: red;
+}
+#fleet-view {
+    height: 275px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    border: solid lightgray 1px;
+//    border: solid lawngreen 1px;
+}
+#ship-view, #command-view {
+    height: 240px;
+    width: 49%;
+    margin: auto;
+    margin-top: 30px;
+//    border: solid lightgray 1px;
+}
+#ship-view {
+    float: left;
+}
+.ship, .command {
+    width: 90%;
+    margin: 12px auto 0px auto;
+    border: solid lightgray 1px;
+}
+.ship {
+    height: 33px;
+}
+#command-view {
+    float: right;
+}
+.command {
+    height: 45px;
+}
+#output-view {
+    height: 259px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+border: solid lightgray 1px;
+//    border: solid lawngreen 1px;
+}

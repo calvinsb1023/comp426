@@ -10,6 +10,9 @@ $(document).ready(function () {
     game.startGame();
 });
 
+var helloWorld = function () {
+    alert("Hello world");
+}
 /*$(document).ready(function () {
     var game = new SuperBattleship();
     var gui_player_one = new GUIPlayer(game, $('#p1_cli_input'),
