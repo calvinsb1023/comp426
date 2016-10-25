@@ -1,0 +1,22 @@
+{
+  "name": "comp426",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calvinsb1023/comp426.git"
+  },
+  "author": "Calvin Barker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/calvinsb1023/comp426/issues"
+  },
+  "homepage": "https://github.com/calvinsb1023/comp426#readme",
+  "devDependencies": {
+    "should": "^11.1.1"
+  }
+}

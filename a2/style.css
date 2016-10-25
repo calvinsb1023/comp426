@@ -1,32 +1,60 @@
+html {
+    height: 100%;
+}
 body {
     font-family: "Courier New", monospace;
+    height: 97%;
 //    background-color: black;
 }
 #gameboard {
-    width: 1200px;
-    height: 700px;
+    width: 1150px;
+    height: 675px;
     border: solid lightgray 1px;
     //border: solid lawngreen 1px;
     margin: auto;
 }
 #map-panel {
     width: 700px;
-    height: 698px;
-//border: solid lightgray 1px;
-//    border: solid lawngreen 1px;
+    height: 673px;
+    //border: solid lightgray 1px;
     float: left;
 }
 #map-view {
-    width: 660px;
-    height: 660px;
-    margin: auto;
+    width: auto;
+    height: auto;
+    margin-left: auto;
     margin-top: 15px;
-border: solid lightgray 1px;
+//border: solid lightgray 1px;
 //    border: solid lawngreen 1px;
 }
+#p1-view {
+    border: solid lightgray 1px;
+    height: auto;
+    width: auto;
+    display: table;
+    margin: auto;
+    border-collapse: collapse;
+}
+.map-square {
+    width: 19px;
+    height: 18px;
+    border: solid lightgray 1px;
+    display: table-cell;
+    float: left;
+    margin: 0;
+}
+.map-square:hover {
+    background-color: black;
+}
+.map-row {
+    width: auto;
+    height: 18px;
+    margin-left: auto;
+    margin-right: auto;
+}
 #player-panel {
-    width: 490px;
-    height: 698px;
+    width: 440px;
+    height: 673px;
     float: right;
 //border: solid lightgray 1px;
 //    border: solid lawngreen 1px;
@@ -35,7 +63,7 @@ border: solid lightgray 1px;
     height: 75px;
     width: 90%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 15px;
     text-align: center;
     font-size: 70px;
     border: solid lightgray 1px;
@@ -76,10 +104,11 @@ border: solid lightgray 1px;
     height: 45px;
 }
 #output-view {
-    height: 259px;
+    height: 246px;
     width: 90%;
     margin: auto;
     margin-top: 20px;
-border: solid lightgray 1px;
+    border: solid lightgray 1px;
 //    border: solid lawngreen 1px;
 }
+
