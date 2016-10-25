@@ -4,14 +4,19 @@ html {
 body {
     font-family: "Courier New", monospace;
     height: 97%;
-//    background-color: black;
+    background-color: black;
+}
+#gameboard, #p1-view, #fire-view {
+    margin: auto;
+}
+
+#gameboard, #p1-view, .map-square, #fire-view, #fleet-view, .ship, .command, #output-view  {
+   // border: solid lightgray 1px;
+     border: solid lawngreen 1px;
 }
 #gameboard {
     width: 1150px;
     height: 675px;
-    border: solid lightgray 1px;
-    //border: solid lawngreen 1px;
-    margin: auto;
 }
 #map-panel {
     width: 700px;
@@ -19,32 +24,30 @@ body {
     //border: solid lightgray 1px;
     float: left;
 }
-#map-view {
+
+
+#map-view, #p1-view {
     width: auto;
     height: auto;
+}
+#map-view {
     margin-left: auto;
     margin-top: 15px;
 //border: solid lightgray 1px;
 //    border: solid lawngreen 1px;
 }
 #p1-view {
-    border: solid lightgray 1px;
-    height: auto;
-    width: auto;
     display: table;
-    margin: auto;
     border-collapse: collapse;
 }
 .map-square {
     width: 19px;
     height: 18px;
-    border: solid lightgray 1px;
-    display: table-cell;
     float: left;
     margin: 0;
 }
 .map-square:hover {
-    background-color: black;
+    background-color: red;
 }
 .map-row {
     width: auto;
@@ -62,37 +65,32 @@ body {
 #fire-view {
     height: 75px;
     width: 90%;
-    margin: auto;
     margin-top: 15px;
     text-align: center;
     font-size: 70px;
-    border: solid lightgray 1px;
-    //color: white;
-    //border: solid red 1px;
-    //background-color: red;
+    color: white;
+    border: solid red 1px;
+    background-color: red;
 }
 #fleet-view {
     height: 275px;
     width: 90%;
     margin: auto;
     margin-top: 20px;
-    border: solid lightgray 1px;
-//    border: solid lawngreen 1px;
+
 }
 #ship-view, #command-view {
     height: 240px;
     width: 49%;
     margin: auto;
     margin-top: 30px;
-//    border: solid lightgray 1px;
 }
 #ship-view {
     float: left;
 }
 .ship, .command {
     width: 90%;
-    margin: 12px auto 0px auto;
-    border: solid lightgray 1px;
+    margin: 12px auto 0 auto;
 }
 .ship {
     height: 33px;
@@ -108,7 +106,5 @@ body {
     width: 90%;
     margin: auto;
     margin-top: 20px;
-    border: solid lightgray 1px;
-//    border: solid lawngreen 1px;
 }
 

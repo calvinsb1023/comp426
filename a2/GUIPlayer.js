@@ -5,29 +5,27 @@ var echoTest = function(name) {
     this.name = name;
 };
 
-var mapDraw = function(width, height) {
+var mapDraw = function(columns, rows) {
+    var $row = $("<div />", {
+        class: 'map-row'
+    });
+    var $square = $("<div />", {
+        class: 'map-square'
+    });
 
+    $(document).ready(function () {
+        //add columns to the the temp row object
+        for (var i = 0; i < columns; i++) {
+            $row.append($square.clone());
+        }
+        //clone the temp row object with the columns to the wrapper
+        for (var i = 0; i < rows; i++) {
+            $("#p1-view").append($row.clone());
+        }
+    });
 };
 
-var rows = 32;
-var columns = 32;
-var $row = $("<div />", {
-    class: 'map-row'
-});
-var $square = $("<div />", {
-    class: 'map-square'
-});
-
-$(document).ready(function () {
-    //add columns to the the temp row object
-    for (var i = 0; i < columns; i++) {
-        $row.append($square.clone());
-    }
-    //clone the temp row object with the columns to the wrapper
-    for (var i = 0; i < rows; i++) {
-        $("#p1-view").append($row.clone());
-    }
-});
+mapDraw(32, 32);
 
 
 
