@@ -6,11 +6,10 @@ body {
     height: 97%;
     background-color: black;
 }
-#gameboard, #p1-view, #fire-view {
+#gameboard, #p1-view, #fire-view, #fleet-view, #ship-view, #command-view, #output-view {
     margin: auto;
 }
-
-#gameboard, #p1-view, .map-square, #fire-view, #fleet-view, .ship, .command, #output-view  {
+#gameboard, #p1-view, .map-square, #fire-view, #fleet-view, .ship, .command, #output-view, #output-view {
    // border: solid lightgray 1px;
      border: solid lawngreen 1px;
 }
@@ -18,93 +17,88 @@ body {
     width: 1150px;
     height: 675px;
 }
-#map-panel {
-    width: 700px;
-    height: 673px;
-    //border: solid lightgray 1px;
+#map-panel, .map-square, #ship-view {
     float: left;
 }
-
-
-#map-view, #p1-view {
+#map-panel, #player-panel {
+    height: 673px;
+}
+#map-panel {
+    width: 700px;
+    //border: solid lightgray 1px;
+}
+#map-view, #p1-view, .map-row {
     width: auto;
+}
+#map-view, #p1-view {
     height: auto;
 }
-#map-view {
+#map-view, .map-row {
     margin-left: auto;
+}
+#map-view, #fire-view {
     margin-top: 15px;
-//border: solid lightgray 1px;
+//    border: solid lightgray 1px;
 //    border: solid lawngreen 1px;
 }
 #p1-view {
     display: table;
     border-collapse: collapse;
 }
+.map-square, .map-row {
+    height: 18px;
+}
 .map-square {
     width: 19px;
-    height: 18px;
-    float: left;
-    margin: 0;
 }
 .map-square:hover {
-    background-color: red;
+    background-color: white;
 }
 .map-row {
-    width: auto;
-    height: 18px;
-    margin-left: auto;
     margin-right: auto;
+}
+#player-panel, #command-view {
+    float: right;
 }
 #player-panel {
     width: 440px;
-    height: 673px;
-    float: right;
 //border: solid lightgray 1px;
 //    border: solid lawngreen 1px;
 }
+#fire-view, #fleet-view, #output-view, .ship, .command {
+    width: 90%;
+}
 #fire-view {
     height: 75px;
-    width: 90%;
-    margin-top: 15px;
     text-align: center;
     font-size: 70px;
+    color: lawngreen;
+}
+#fire-view:hover{
     color: white;
     border: solid red 1px;
     background-color: red;
 }
+#fleet-view, #output-view {
+    margin-top: 20px;
+}
 #fleet-view {
     height: 275px;
-    width: 90%;
-    margin: auto;
-    margin-top: 20px;
-
 }
 #ship-view, #command-view {
     height: 240px;
     width: 49%;
-    margin: auto;
     margin-top: 30px;
 }
-#ship-view {
-    float: left;
-}
 .ship, .command {
-    width: 90%;
     margin: 12px auto 0 auto;
 }
 .ship {
     height: 33px;
-}
-#command-view {
-    float: right;
 }
 .command {
     height: 45px;
 }
 #output-view {
     height: 246px;
-    width: 90%;
-    margin: auto;
-    margin-top: 20px;
 }
-
