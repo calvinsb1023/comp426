@@ -14,19 +14,37 @@ var mapDraw = function(columns, rows) {
     });
 
     $(document).ready(function () {
-        //add columns to the the temp row object
-        for (var i = 0; i < columns; i++) {
-            $row.append($square.clone());
-        }
-        //clone the temp row object with the columns to the wrapper
         for (var i = 0; i < rows; i++) {
-            $("#p1-view").append($row.clone());
+            //creates temporary row object
+            var $rowClone = $row.clone();
+            for (var j = 0; j < columns; j++) {
+                //creates temporary square with unique id that will be used for location using modular arithmetic
+                var $squareClone = $square.clone();
+                $squareClone.attr("id", i + (j*32));
+                $rowClone.append($squareClone)
+            }
+            $("#p1-view").append($rowClone);
         }
     });
 };
 
 mapDraw(32, 32);
 
+$(document).ready(function () {
+    $('.map-square').click(function() {
+        var id = '#' + this.id;
+
+        if($(id).hasClass('map-square-selected')) {
+            $(id).removeClass('map-square-selected');
+            $('#fire-view').removeClass('fire-ready').addClass('fire-standby');
+        } else {
+            $('.map-square-selected').removeClass('map-square-selected')
+            $(id).addClass('map-square-selected');
+            $('#fire-view').removeClass('fire-standby').addClass('fire-ready');
+        }
+        //alert(this.id%32 + ' ' + Math.floor(this.id / 32));
+    });
+});
 
 
 /**

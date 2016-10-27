@@ -9,7 +9,7 @@ body {
 #gameboard, #p1-view, #fire-view, #fleet-view, #ship-view, #command-view, #output-view {
     margin: auto;
 }
-#gameboard, #p1-view, .map-square, #fire-view, #fleet-view, .ship, .command, #output-view, #output-view {
+#gameboard, #p1-view, .map-square, .fire-standby, .fire-ready, #fleet-view, .ship, .command, #output-view, #output-view {
    // border: solid lightgray 1px;
      border: solid lawngreen 1px;
 }
@@ -51,9 +51,10 @@ body {
 .map-square {
     width: 19px;
 }
-.map-square:hover {
+.map-square:hover, .map-square-selected {
     background-color: white;
 }
+
 .map-row {
     margin-right: auto;
 }
@@ -72,12 +73,16 @@ body {
     height: 75px;
     text-align: center;
     font-size: 70px;
+}
+.fire-standby {
     color: lawngreen;
 }
-#fire-view:hover{
+.fire-ready:hover, .fire-ready {
     color: white;
-    border: solid red 1px;
     background-color: red;
+}
+.fire-ready:hover {
+    border: solid red 1px;
 }
 #fleet-view, #output-view {
     margin-top: 20px;
