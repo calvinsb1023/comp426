@@ -21,6 +21,11 @@ var mapDraw = function(columns, rows) {
                 //creates temporary square with unique id that will be used for location using modular arithmetic
                 var $squareClone = $square.clone();
                 $squareClone.attr("id", i + (j*32));
+
+                //when used in a jQuery click-based function...
+                //this.id % 32 gives the row
+                //Math.floor(this.id / 32) gives the column
+
                 $rowClone.append($squareClone)
             }
             $("#p1-view").append($rowClone);
@@ -38,41 +43,11 @@ $(document).ready(function () {
             $(id).removeClass('map-square-selected');
             $('#fire-view').removeClass('fire-ready').addClass('fire-standby');
         } else {
-            $('.map-square-selected').removeClass('map-square-selected')
+            $('.map-square-selected').removeClass('map-square-selected');
             $(id).addClass('map-square-selected');
             $('#fire-view').removeClass('fire-standby').addClass('fire-ready');
         }
-        //alert(this.id%32 + ' ' + Math.floor(this.id / 32));
-    });
-});
 
-
-/**
- * Unit tests using Mocha and should.js
- */
-
-var should = require("should"),
-    jsdom = require('jsdom');
-describe("Checking if the user is created correctly", function(){
-    it("should create the user with the correct name", function(){
-        debugger;
-        var str = "Hello world!";
-        var guiPl = new echoTest(str);
-        guiPl.name.should.be.equal(str);
-    });
-});
-
-describe("Checking to see if map of proper size is created", function() {
-    it("should create a 32x32 grid of divs (of which 31x31 will be used for game play)", function() {
-        debugger;
-        var size = 32*32;
-        mapDraw(32,32);
-        var ms = $("div#p1-view").find(".map-square")
-        var msCount = 0;
-        for (item in ms) {
-            msCount++;
-        }
-        msCount.should.be.equal(size);
 
     });
 });

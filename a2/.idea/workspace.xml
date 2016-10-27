@@ -26,8 +26,8 @@
       <file leaf-file-name="SuperBattleship.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SuperBattleship.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+            <state relative-caret-position="491">
+              <caret line="50" column="10" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -36,8 +36,8 @@
       <file leaf-file-name="GUIPlayer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GUIPlayer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+            <state relative-caret-position="150">
+              <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -56,8 +56,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+            <state relative-caret-position="405">
+              <caret line="64" column="1" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -92,8 +92,8 @@
         <option value="$PROJECT_DIR$/CLIOnePlayerSuperBattleship.js" />
         <option value="$PROJECT_DIR$/test.js" />
         <option value="$PROJECT_DIR$/GUIOnePlayerSuperBattleship.js" />
-        <option value="$PROJECT_DIR$/SuperBattleship.html" />
         <option value="$PROJECT_DIR$/GUIPlayer.js" />
+        <option value="$PROJECT_DIR$/SuperBattleship.html" />
         <option value="$PROJECT_DIR$/style.css" />
       </list>
     </option>
@@ -270,7 +270,7 @@
       <workItem from="1477236122281" duration="119000" />
       <workItem from="1477236257213" duration="3466000" />
       <workItem from="1477272681964" duration="5901000" />
-      <workItem from="1477403548195" duration="13025000" />
+      <workItem from="1477403548195" duration="14906000" />
     </task>
     <servers />
   </component>
@@ -283,7 +283,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22511000" />
+    <option name="totallyTimeSpent" value="24392000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="36" y="23" width="1235" height="777" extended-state="6" />
@@ -467,6 +467,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SuperBattleship.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="50" column="10" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/One CLI Player Super Battleship_files/CLIOnePlayerSuperBattleship.htm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -475,26 +483,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SuperBattleship.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GUIPlayer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+        <state relative-caret-position="150">
+          <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        <state relative-caret-position="405">
+          <caret line="64" column="1" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
           <folding />
         </state>
       </provider>

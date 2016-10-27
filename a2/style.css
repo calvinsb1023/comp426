@@ -38,8 +38,6 @@ body {
 }
 #map-view, #fire-view {
     margin-top: 15px;
-//    border: solid lightgray 1px;
-//    border: solid lawngreen 1px;
 }
 #p1-view {
     display: table;
@@ -54,7 +52,22 @@ body {
 .map-square:hover, .map-square-selected {
     background-color: white;
 }
-
+.visible {  }
+.visible-water {
+    background-color: blue;
+}
+.friendly {
+    background-color: lawngreen;
+}
+.visible-enemy {
+    background-color: orange;
+}
+.hit {
+    background-color: red;
+}
+.miss {
+    background-color: purple;
+}
 .map-row {
     margin-right: auto;
 }
@@ -63,8 +76,6 @@ body {
 }
 #player-panel {
     width: 440px;
-//border: solid lightgray 1px;
-//    border: solid lawngreen 1px;
 }
 #fire-view, #fleet-view, #output-view, .ship, .command {
     width: 90%;
