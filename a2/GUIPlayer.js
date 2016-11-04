@@ -5,7 +5,11 @@ var echoTest = function(name) {
     this.name = name;
 };
 
-var mapDraw = function(columns, rows) {
+var getId = function (row, column) {
+    return column + row * 32;
+};
+
+var mapDraw = function(rows, columns) {
     var $row = $("<div />", {
         class: 'map-row'
     });
