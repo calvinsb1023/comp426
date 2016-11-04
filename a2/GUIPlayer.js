@@ -1,15 +1,12 @@
 /**
  * Created by barkerc1 on 10/23/16.
  */
-var echoTest = function(name) {
-    this.name = name;
-};
 
 var getId = function (row, column) {
     return column + row * 32;
 };
 
-var mapDraw = function(rows, columns) {
+var mapDrawInit = function(rows, columns) {
     var $row = $("<div />", {
         class: 'map-row'
     });
@@ -37,21 +34,65 @@ var mapDraw = function(rows, columns) {
     });
 };
 
-mapDraw(32, 32);
+mapDrawInit(32, 32);
+
+var toggleFire = function(on) {
+    if (on == 0) {
+        $('#fire-view').removeClass('fire-ready').addClass('fire-standby');
+    } else {
+        $('#fire-view').removeClass('fire-standby').addClass('fire-ready');
+    }
+};
+var toggleSquareSelection = function(id, on) {
+    if (on == 1) {
+        $('.map-square-selected').removeClass('map-square-selected');
+        $('.ship-button-selected').removeClass('ship-button-selected');
+        $('.command-button-active').removeClass('command-button-active');
+        $(id).addClass('map-square-selected');
+        toggleFire(on);
+    } else {
+        $('.map-square-selected').removeClass('map-square-selected');
+        toggleFire(on);
+    }
+};
+var toggleCommandSelection = function (on) {
+    if (on == 1) {
+        $('.command').addClass('command-button-active');
+    } else {
+        $('.command-button-active').removeClass('command-button-active');
+    }
+};
+var toggleShipSelection = function(id, on) {
+    if (on == 1) {
+        toggleFire(0);
+        $('.ship-button-selected').removeClass('ship-button-selected');
+        $(id).addClass('ship-button-selected');
+        toggleSquareSelection(-1, 0);
+        toggleCommandSelection(1);
+    } else {
+        $(id).removeClass('ship-button-selected');
+        toggleCommandSelection(0);
+    }
+};
 
 $(document).ready(function () {
+    $('.ship-button').click(function() {
+        var id = "#" + this.id;
+        if ($(id).hasClass('ship-button-selected')){
+            toggleShipSelection(id, 0);
+        } else {
+            toggleShipSelection(id, 1);
+        }
+    });
+
     $('.map-square').click(function() {
         var id = '#' + this.id;
-
         if($(id).hasClass('map-square-selected')) {
-            $(id).removeClass('map-square-selected');
-            $('#fire-view').removeClass('fire-ready').addClass('fire-standby');
+            toggleSquareSelection(id, 0);
         } else {
-            $('.map-square-selected').removeClass('map-square-selected');
-            $(id).addClass('map-square-selected');
-            $('#fire-view').removeClass('fire-standby').addClass('fire-ready');
+            toggleSquareSelection(id, 1);
         }
-
 
     });
 });
+

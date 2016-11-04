@@ -6,9 +6,7 @@
 
 
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
-            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-            crossorigin="anonymous"></script>
+    <script src="jquery-3.1.0.js"></script>
     <script src="http://www.cs.unc.edu/Courses/comp426-f16/kmp/SuperBattleship/SBConstants.js"></script>
     <script src="http://www.cs.unc.edu/Courses/comp426-f16/kmp/SuperBattleship/SuperBattleship.js"></script>
     <script src="GUIPlayer.js"></script>
@@ -34,17 +32,17 @@
         <div id="fire-view" class="fire-standby">FIRE</div>
         <div id="fleet-view">
             <div id="ship-view">
-                <div class="ship" id="carrier"></div>
-                <div class="ship" id="battleship"></div>
-                <div class="ship" id="submarine"></div>
-                <div class="ship" id="cruiser"></div>
-                <div class="ship" id="destroyer"></div>
+                <div class="ship-button" id="carrier"></div>
+                <div class="ship-button" id="battleship"></div>
+                <div class="ship-button" id="submarine"></div>
+                <div class="ship-button" id="cruiser"></div>
+                <div class="ship-button" id="destroyer"></div>
             </div>
                 <div id="command-view">
-                    <div class="command" id="forward"></div>
-                    <div class="command" id="backward"></div>
-                    <div class="command" id="rotate-cw"></div>
-                    <div class="command" id="rotate-ccw"></div>
+                    <div class="command top" id="forward"></div>
+                    <div class="command bottom" id="rotate-cw"></div>
+                    <div class="command bottom" id="backward"></div>
+                    <div class="command bottom" id="rotate-ccw"></div>
                 </div>
         </div>
         <div id="output-view"></div>

@@ -6,11 +6,11 @@ body {
     height: 97%;
     background-color: black;
 }
-#gameboard, #p1-view, #fire-view, #fleet-view, #ship-view, #command-view, #output-view {
+#gameboard, #p1-view, #fire-view, #fleet-view, #ship-view, #command-view, #output-view, .top {
     margin: auto;
 }
 #gameboard, #p1-view, .map-square, .fire-standby, .fire-ready, #fleet-view,
-    .ship, .command, #output-view, #output-view {
+    .ship-button, .command, #output-view, #output-view {
    // border: solid lightgray 1px;
      border: solid lawngreen 1px;
 }
@@ -18,7 +18,7 @@ body {
     width: 1150px;
     height: 675px;
 }
-#map-panel, .map-square, #ship-view {
+#map-panel, .map-square, #ship-view, .bottom{
     float: left;
 }
 #map-panel, #player-panel {
@@ -49,20 +49,20 @@ body {
 .map-square {
     width: 19px;
 }
-.map-square:hover, .map-square-selected {
+.map-square:hover, .map-square-selected, .command-button-active:hover, .command-active:hover{
     background-color: white;
 }
 .visible {  }
 .visible-water {
     background-color: blue;
 }
-.friendly {
+.friendly, .ship-button-selected, .ship-button:hover, .command-button-active {
     background-color: lawngreen;
 }
 .visible-enemy {
     background-color: orange;
 }
-.hit {
+.hit, .fire-ready:hover, .fire-ready {
     background-color: red;
 }
 .miss {
@@ -77,7 +77,7 @@ body {
 #player-panel {
     width: 440px;
 }
-#fire-view, #fleet-view, #output-view, .ship, .command {
+#fire-view, #fleet-view, #output-view, .ship-button {
     width: 90%;
 }
 #fire-view {
@@ -90,7 +90,6 @@ body {
 }
 .fire-ready:hover, .fire-ready {
     color: white;
-    background-color: red;
 }
 .fire-ready:hover {
     border: solid red 1px;
@@ -106,15 +105,21 @@ body {
     width: 49%;
     margin-top: 30px;
 }
-.ship, .command {
+.ship-button {
     margin: 12px auto 0 auto;
-}
-.ship {
     height: 33px;
 }
 .command {
     height: 45px;
+    width: 45px;
+}
+.bottom {
+    margin: 14px 8px 0 9px;
+}
+.top {
+    margin-top: 50px;
 }
 #output-view {
     height: 246px;
+    overflow-y: scroll;
 }
