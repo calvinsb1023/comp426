@@ -49,8 +49,9 @@ body {
 .map-square {
     width: 19px;
 }
-.map-square:hover, .map-square-selected, .command-button-active:hover, .command-active:hover{
+.map-square:hover, .map-square-selected, .command-button-active:hover {
     background-color: white;
+    color: lawngreen;
 }
 .visible {  }
 .visible-water {

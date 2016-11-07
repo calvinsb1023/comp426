@@ -67,11 +67,21 @@ var toggleShipSelection = function(id, on) {
         toggleFire(0);
         $('.ship-button-selected').removeClass('ship-button-selected');
         $(id).addClass('ship-button-selected');
+        // TODO: handle changing classes of ships on the gameboard
         toggleSquareSelection(-1, 0);
         toggleCommandSelection(1);
     } else {
         $(id).removeClass('ship-button-selected');
         toggleCommandSelection(0);
+    }
+};
+
+//TODO: handle map ship classes
+var shipClick = function(id, on) {
+    if (on == 1) {
+
+    } else {
+
     }
 };
 
@@ -92,7 +102,14 @@ $(document).ready(function () {
         } else {
             toggleSquareSelection(id, 1);
         }
+    });
 
+    $('.command-button-active').click(function () {
+        //TODO: call the move function
+    });
+
+    $('.fire-ready').click(function() {
+        //TODO: call the fire function
     });
 });
 
