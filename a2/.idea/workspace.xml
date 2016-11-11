@@ -37,9 +37,27 @@
             <file leaf-file-name="GUIPlayer.js" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/GUIPlayer.js">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="705">
-                    <caret line="147" column="23" selection-start-line="147" selection-start-column="23" selection-end-line="147" selection-end-column="23" />
-                    <folding />
+                  <state relative-caret-position="885">
+                    <caret line="203" column="0" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
+                    <folding>
+                      <element signature="e#80#113#0" expanded="false" />
+                      <element signature="e#140#175#0" expanded="false" />
+                      <element signature="e#202#225#0" expanded="false" />
+                      <element signature="e#270#1130#0" expanded="false" />
+                      <element signature="e#1287#1411#0" expanded="false" />
+                      <element signature="e#1556#3177#0" expanded="false" />
+                      <element signature="e#3622#5056#0" expanded="false" />
+                      <element signature="e#5263#5480#0" expanded="false" />
+                      <element signature="e#5531#5997#0" expanded="false" />
+                      <element signature="e#6046#6242#0" expanded="false" />
+                      <element signature="e#6291#6749#0" expanded="false" />
+                      <element signature="e#6825#6884#0" expanded="false" />
+                      <element signature="e#6891#6925#0" expanded="false" />
+                      <element signature="e#6992#7098#0" expanded="false" />
+                      <element signature="e#7155#7427#0" expanded="false" />
+                      <element signature="e#7485#7684#0" expanded="false" />
+                      <element signature="e#7741#7943#0" expanded="false" />
+                    </folding>
                   </state>
                 </provider>
               </entry>
@@ -58,8 +76,8 @@
       <file leaf-file-name="SuperBattleship.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SuperBattleship.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="311">
+              <caret line="37" column="60" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -78,18 +96,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CLIOnePlayerSuperBattleship.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/One CLI Player Super Battleship_files/CLIOnePlayerSuperBattleship.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="494">
+              <caret line="118" column="1" selection-start-line="118" selection-start-column="1" selection-end-line="118" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -98,23 +106,13 @@
       <file leaf-file-name="CLIPlayer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/One CLI Player Super Battleship_files/CLIPlayer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="114" column="24" selection-start-line="114" selection-start-column="24" selection-end-line="114" selection-end-column="24" />
+            <state relative-caret-position="-65">
+              <caret line="136" column="11" selection-start-line="136" selection-start-column="11" selection-end-line="136" selection-end-column="11" />
               <folding>
-                <element signature="e#320#1528#0" expanded="false" />
-                <element signature="e#374#1492#0" expanded="false" />
-                <element signature="e#3241#5044#0" expanded="false" />
+                <element signature="e#104#148#0" expanded="false" />
+                <element signature="e#1905#3107#0" expanded="false" />
+                <element signature="e#2304#2965#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DumbAI.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/One CLI Player Super Battleship_files/DumbAI.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -135,11 +133,11 @@
       <list>
         <option value="$PROJECT_DIR$/CLIOnePlayerSuperBattleship.js" />
         <option value="$PROJECT_DIR$/test.js" />
-        <option value="$PROJECT_DIR$/SuperBattleship.html" />
         <option value="$PROJECT_DIR$/One CLI Player Super Battleship_files/DumbAI.js" />
-        <option value="$PROJECT_DIR$/GUIPlayer.js" />
         <option value="$PROJECT_DIR$/GUIOnePlayerSuperBattleship.js" />
         <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/SuperBattleship.html" />
+        <option value="$PROJECT_DIR$/GUIPlayer.js" />
       </list>
     </option>
   </component>
@@ -314,7 +312,7 @@
       <workItem from="1477667888798" duration="564000" />
       <workItem from="1477781124333" duration="872000" />
       <workItem from="1478255019343" duration="10672000" />
-      <workItem from="1478881375687" duration="8000000" />
+      <workItem from="1478881375687" duration="11600000" />
     </task>
     <servers />
   </component>
@@ -330,7 +328,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45113000" />
+    <option name="totallyTimeSpent" value="48713000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="41" y="23" width="1239" height="777" extended-state="6" />
@@ -367,7 +365,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -384,7 +382,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1620">
           <caret line="108" column="4" selection-start-line="108" selection-start-column="4" selection-end-line="108" selection-end-column="4" />
-          <folding />
+          <folding>
+            <element signature="e#80#113#0" expanded="false" />
+            <element signature="e#140#175#0" expanded="false" />
+            <element signature="e#202#225#0" expanded="false" />
+            <element signature="e#270#1130#0" expanded="false" />
+            <element signature="e#1287#1411#0" expanded="false" />
+            <element signature="e#1556#3177#0" expanded="false" />
+            <element signature="e#3622#5056#0" expanded="false" />
+            <element signature="e#5263#5480#0" expanded="false" />
+            <element signature="e#5531#5997#0" expanded="false" />
+            <element signature="e#6046#6242#0" expanded="false" />
+            <element signature="e#6291#6749#0" expanded="false" />
+            <element signature="e#6825#6884#0" expanded="false" />
+            <element signature="e#6891#6925#0" expanded="false" />
+            <element signature="e#6992#7098#0" expanded="false" />
+            <element signature="e#7155#7427#0" expanded="false" />
+            <element signature="e#7485#7684#0" expanded="false" />
+            <element signature="e#7741#7943#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -408,7 +424,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#80#113#0" expanded="false" />
+            <element signature="e#140#175#0" expanded="false" />
+            <element signature="e#202#225#0" expanded="false" />
+            <element signature="e#270#1130#0" expanded="false" />
+            <element signature="e#1287#1411#0" expanded="false" />
+            <element signature="e#1556#3177#0" expanded="false" />
+            <element signature="e#3622#5056#0" expanded="false" />
+            <element signature="e#5263#5480#0" expanded="false" />
+            <element signature="e#5531#5997#0" expanded="false" />
+            <element signature="e#6046#6242#0" expanded="false" />
+            <element signature="e#6291#6749#0" expanded="false" />
+            <element signature="e#6825#6884#0" expanded="false" />
+            <element signature="e#6891#6925#0" expanded="false" />
+            <element signature="e#6992#7098#0" expanded="false" />
+            <element signature="e#7155#7427#0" expanded="false" />
+            <element signature="e#7485#7684#0" expanded="false" />
+            <element signature="e#7741#7943#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -450,7 +484,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
-          <folding />
+          <folding>
+            <element signature="e#80#113#0" expanded="false" />
+            <element signature="e#140#175#0" expanded="false" />
+            <element signature="e#202#225#0" expanded="false" />
+            <element signature="e#270#1130#0" expanded="false" />
+            <element signature="e#1287#1411#0" expanded="false" />
+            <element signature="e#1556#3177#0" expanded="false" />
+            <element signature="e#3622#5056#0" expanded="false" />
+            <element signature="e#5263#5480#0" expanded="false" />
+            <element signature="e#5531#5997#0" expanded="false" />
+            <element signature="e#6046#6242#0" expanded="false" />
+            <element signature="e#6291#6749#0" expanded="false" />
+            <element signature="e#6825#6884#0" expanded="false" />
+            <element signature="e#6891#6925#0" expanded="false" />
+            <element signature="e#6992#7098#0" expanded="false" />
+            <element signature="e#7155#7427#0" expanded="false" />
+            <element signature="e#7485#7684#0" expanded="false" />
+            <element signature="e#7741#7943#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -492,7 +544,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
-          <folding />
+          <folding>
+            <element signature="e#80#113#0" expanded="false" />
+            <element signature="e#140#175#0" expanded="false" />
+            <element signature="e#202#225#0" expanded="false" />
+            <element signature="e#270#1130#0" expanded="false" />
+            <element signature="e#1287#1411#0" expanded="false" />
+            <element signature="e#1556#3177#0" expanded="false" />
+            <element signature="e#3622#5056#0" expanded="false" />
+            <element signature="e#5263#5480#0" expanded="false" />
+            <element signature="e#5531#5997#0" expanded="false" />
+            <element signature="e#6046#6242#0" expanded="false" />
+            <element signature="e#6291#6749#0" expanded="false" />
+            <element signature="e#6825#6884#0" expanded="false" />
+            <element signature="e#6891#6925#0" expanded="false" />
+            <element signature="e#6992#7098#0" expanded="false" />
+            <element signature="e#7155#7427#0" expanded="false" />
+            <element signature="e#7485#7684#0" expanded="false" />
+            <element signature="e#7741#7943#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -516,7 +586,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#80#113#0" expanded="false" />
+            <element signature="e#140#175#0" expanded="false" />
+            <element signature="e#202#225#0" expanded="false" />
+            <element signature="e#270#1130#0" expanded="false" />
+            <element signature="e#1287#1411#0" expanded="false" />
+            <element signature="e#1556#3177#0" expanded="false" />
+            <element signature="e#3622#5056#0" expanded="false" />
+            <element signature="e#5263#5480#0" expanded="false" />
+            <element signature="e#5531#5997#0" expanded="false" />
+            <element signature="e#6046#6242#0" expanded="false" />
+            <element signature="e#6291#6749#0" expanded="false" />
+            <element signature="e#6825#6884#0" expanded="false" />
+            <element signature="e#6891#6925#0" expanded="false" />
+            <element signature="e#6992#7098#0" expanded="false" />
+            <element signature="e#7155#7427#0" expanded="false" />
+            <element signature="e#7485#7684#0" expanded="false" />
+            <element signature="e#7741#7943#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -557,7 +645,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#80#113#0" expanded="false" />
+            <element signature="e#140#175#0" expanded="false" />
+            <element signature="e#202#225#0" expanded="false" />
+            <element signature="e#270#1130#0" expanded="false" />
+            <element signature="e#1287#1411#0" expanded="false" />
+            <element signature="e#1556#3177#0" expanded="false" />
+            <element signature="e#3622#5056#0" expanded="false" />
+            <element signature="e#5263#5480#0" expanded="false" />
+            <element signature="e#5531#5997#0" expanded="false" />
+            <element signature="e#6046#6242#0" expanded="false" />
+            <element signature="e#6291#6749#0" expanded="false" />
+            <element signature="e#6825#6884#0" expanded="false" />
+            <element signature="e#6891#6925#0" expanded="false" />
+            <element signature="e#6992#7098#0" expanded="false" />
+            <element signature="e#7155#7427#0" expanded="false" />
+            <element signature="e#7485#7684#0" expanded="false" />
+            <element signature="e#7741#7943#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -618,6 +724,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/One CLI Player Super Battleship_files/DumbAI.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/One CLI Player Super Battleship_files/CLIOnePlayerSuperBattleship.htm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -644,47 +758,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="118" column="1" selection-start-line="118" selection-start-column="1" selection-end-line="118" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/One CLI Player Super Battleship_files/CLIPlayer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="114" column="24" selection-start-line="114" selection-start-column="24" selection-end-line="114" selection-end-column="24" />
+        <state relative-caret-position="-65">
+          <caret line="136" column="11" selection-start-line="136" selection-start-column="11" selection-end-line="136" selection-end-column="11" />
           <folding>
-            <element signature="e#320#1528#0" expanded="false" />
-            <element signature="e#374#1492#0" expanded="false" />
-            <element signature="e#3241#5044#0" expanded="false" />
+            <element signature="e#104#148#0" expanded="false" />
+            <element signature="e#1905#3107#0" expanded="false" />
+            <element signature="e#2304#2965#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/One CLI Player Super Battleship_files/DumbAI.js">
+    <entry file="file://$PROJECT_DIR$/SuperBattleship.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        <state relative-caret-position="311">
+          <caret line="37" column="60" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GUIPlayer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="147" column="23" selection-start-line="147" selection-start-column="23" selection-end-line="147" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SuperBattleship.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="885">
+          <caret line="203" column="0" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
+          <folding>
+            <element signature="e#80#113#0" expanded="false" />
+            <element signature="e#140#175#0" expanded="false" />
+            <element signature="e#202#225#0" expanded="false" />
+            <element signature="e#270#1130#0" expanded="false" />
+            <element signature="e#1287#1411#0" expanded="false" />
+            <element signature="e#1556#3177#0" expanded="false" />
+            <element signature="e#3622#5056#0" expanded="false" />
+            <element signature="e#5263#5480#0" expanded="false" />
+            <element signature="e#5531#5997#0" expanded="false" />
+            <element signature="e#6046#6242#0" expanded="false" />
+            <element signature="e#6291#6749#0" expanded="false" />
+            <element signature="e#6825#6884#0" expanded="false" />
+            <element signature="e#6891#6925#0" expanded="false" />
+            <element signature="e#6992#7098#0" expanded="false" />
+            <element signature="e#7155#7427#0" expanded="false" />
+            <element signature="e#7485#7684#0" expanded="false" />
+            <element signature="e#7741#7943#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

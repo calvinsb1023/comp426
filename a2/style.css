@@ -110,16 +110,16 @@ body {
 .friendly, .ship-button-selected, .ship-button:hover, .command-button-active {
     background-color: lawngreen;
 }
-.miss {
-    background-color: purple;
-}
 .visible-enemy {
     background-color: orange;
-}
-.hit, .fire-ready:hover, .fire-ready {
-    background-color: red;
 }
 .map-square:hover, .map-square-selected, .command-button-active:hover {
     background-color: white;
     color: lawngreen;
+}
+.miss {
+    background-color: purple;
+}
+.hit, .fire-ready:hover, .fire-ready {
+    background-color: red;
 }
