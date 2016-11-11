@@ -5,11 +5,9 @@
 var getId = function (row, column) {
     return column + row * 32;
 };
-
 var getX = function(id) {
     return Math.floor(id / 32);
 };
-
 var getY = function(id) {
     return id % 32;
 };
@@ -157,9 +155,11 @@ var GUIPlayer = function(game, cli_output, map, is_player_one) {
 
 
     /**
-     * helper functions for manipulating visual
+     * helper functions for manipulating visuals
      * @param on
      */
+
+    var activeShip = null;
     var toggleFire = function(on) {
         if (on == 0) {
             $('#fire-view').removeClass('fire-ready').addClass('fire-standby');
@@ -216,7 +216,25 @@ var GUIPlayer = function(game, cli_output, map, is_player_one) {
     $(document).on('click', '.command-button-active', function() {
         //alert('test');
         //TODO: call the move function
-        console.log('cmd button');
+        var id = this.id;
+        console.log(this.id);
+
+        switch (id) {
+            case 'forward':
+                game.moveShipForward(key, activeShip);
+                break;
+            case 'backward':
+                game.moveShipBackward(key, activeShip);
+                break;
+            case 'rotate-ccw':
+                game.rotateShipCCW(key, activeShip);
+                break;
+            case 'rotate-cw':
+                game.rotateShipCW(key, activeShip);
+                break;
+        }
+
+
     });
     $(document).on('click', '.fire-ready', function() {
         var id = $('.map-square-selected').attr('id');
@@ -235,6 +253,9 @@ var GUIPlayer = function(game, cli_output, map, is_player_one) {
         } else {
             toggleShipSelection(id, 1);
         }
+        console.log(this.id);
+        activeShip = game.getShipByName(key, this.id);
+
     });
     $(document).on('click', '.map-square', function() {
         var id = '#' + this.id;
