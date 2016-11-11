@@ -86,6 +86,7 @@ var GUIPlayer = function(game, cli_output, map, is_player_one) {
                 }
                 break;
             case SBConstants.GAME_OVER_EVENT:
+                alert('game over');
                 if (is_player_one && e.winner == SBConstants.PLAYER_ONE) {
                     cli_msg.text("Game over. You win!");
                 } else {
@@ -104,6 +105,8 @@ var GUIPlayer = function(game, cli_output, map, is_player_one) {
         eventLogHandler);
     game.registerEventHandler(SBConstants.SHIP_SUNK_EVENT,
         eventLogHandler);
+    game.registerEventHandler(SBConstants.GAME_OVER_EVENT,
+        eventLogHandler);
 
     /**
      * deals with drawing the map
@@ -119,6 +122,9 @@ var GUIPlayer = function(game, cli_output, map, is_player_one) {
                 //console.log(sqr.type + " " + id);
 
                 switch (sqr.type) {
+                    case "invisible":
+                        $(id).attr("class", "map-square");
+                        break;
                     case "miss":
                         $(id).addClass("miss");
                         break;
@@ -141,9 +147,6 @@ var GUIPlayer = function(game, cli_output, map, is_player_one) {
                     case "empty":
                         $(id).attr("class", "map-square visible-water");
                         break;
-                    case "invisible":
-                        $(id).attr("class", "map-square");
-                        break;
                 }
             }
         }
@@ -151,6 +154,8 @@ var GUIPlayer = function(game, cli_output, map, is_player_one) {
 
 
     game.registerEventHandler(SBConstants.TURN_CHANGE_EVENT,
+        mapDrawHandler);
+    game.registerEventHandler(SBConstants.GAME_OVER_EVENT,
         mapDrawHandler);
 
 
@@ -213,9 +218,10 @@ var GUIPlayer = function(game, cli_output, map, is_player_one) {
      * For user clicks
      */
 
+    /**
+     * Handle ship movements
+     */
     $(document).on('click', '.command-button-active', function() {
-        //alert('test');
-        //TODO: call the move function
         var id = this.id;
         console.log(this.id);
 
@@ -236,6 +242,10 @@ var GUIPlayer = function(game, cli_output, map, is_player_one) {
 
 
     });
+
+    /**
+     * Handles firing commands
+     */
     $(document).on('click', '.fire-ready', function() {
         var id = $('.map-square-selected').attr('id');
         //alert('test');

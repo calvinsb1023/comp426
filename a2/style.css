@@ -5,6 +5,7 @@ body {
     font-family: "Courier New", monospace;
     height: 97%;
     background-color: black;
+
 }
 #gameboard, #p1-view, #fire-view, #fleet-view, #ship-view, #command-view, #output-view, .top {
     margin: auto;
@@ -89,6 +90,7 @@ body {
 .ship-button {
     margin: 12px auto 0 auto;
     height: 33px;
+    color: lawngreen;
 }
 .command {
     height: 45px;
@@ -101,6 +103,7 @@ body {
     margin-top: 50px;
 }
 #output-view {
+    color: lawngreen;
     height: 246px;
     overflow-y: auto;
 }
@@ -109,6 +112,7 @@ body {
 }
 .friendly, .ship-button-selected, .ship-button:hover, .command-button-active {
     background-color: lawngreen;
+    color: black;
 }
 .visible-enemy {
     background-color: orange;
