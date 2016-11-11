@@ -122,5 +122,5 @@ body {
 }
 #output-view {
     height: 246px;
-    overflow-y: scroll;
+    overflow-y: auto;
 }

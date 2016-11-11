@@ -36,6 +36,102 @@ var mapDrawInit = function(rows, columns) {
 
 mapDrawInit(32, 32);
 
+var GUIPlayer = function(game, cli_output, map, is_player_one) {
+    if (is_player_one) {
+        var key = game.registerPlayerOne();
+        console.log(key);
+        console.log(game.getPlayerOneFleet());
+    } else {
+        key = game.registerPlayerTwo();
+    }
+
+    map = $(map);
+    cli_output = $(cli_output);
+
+
+    //cleans map before querying without making things too crazy in terms of rebuilding divs
+    //$(".map-square").attr("class", "map-square");
+
+    console.log("made 60");
+
+    var mapDrawHandler = function(e) {
+        for (var y = 0; y < game.getBoardSize(); y++){
+            for (var x = 0; x < game.getBoardSize(); x++) {
+                var sqr = game.queryLocation(key, x, y);
+                var id = '#' + getId(x,y);
+
+                console.log(sqr.type + " " + id);
+
+                switch (sqr.type) {
+                    case "miss":
+                        $(id).addClass("miss");
+                        break;
+                    case "p1":
+                        if (sqr.state == SBConstants.OK) {
+                            //$(id).addClass("friendly");
+                            $(id).attr("class", "map-square friendly");
+                            console.log(id);
+                        } else {
+                            $(id).attr("class", "map-square hit");
+                        }
+                        break;
+                    case "p2":
+                        if (sqr.state == SBConstants.OK) {
+                            $(id).attr("class", "map-square visible-enemy");
+                        } else {
+                            $(id).attr("class", "map-square hit");
+                        }
+                        break;
+                    case "empty":
+                        $(id).attr("class", "map-square visible-water");
+                        break;
+                    case "invisible":
+                        $(id).attr("class", "map-square");
+                        break;
+                }
+            }
+        }
+    };
+
+    game.registerEventHandler(SBConstants.TURN_CHANGE_EVENT,
+        mapDrawHandler);
+
+};
+
+
+
+
+
+/*var mapDrawInit = function(rows, columns) {
+    var $row = $("<div />", {
+        class: 'map-row'
+    });
+    var $square = $("<div />", {
+        class: 'map-square'
+    });
+
+    $(document).ready(function () {
+        for (var i = 0; i < rows; i++) {
+            //creates temporary row object
+            var $rowClone = $row.clone();
+            for (var j = 0; j < columns; j++) {
+                //creates temporary square with unique id that will be used for location using modular arithmetic
+                var $squareClone = $square.clone();
+                $squareClone.attr("id", i + (j*32));
+
+                //when used in a jQuery click-based function...
+                //this.id % 32 gives the row
+                //Math.floor(this.id / 32) gives the column
+
+                $rowClone.append($squareClone)
+            }
+            $("#p1-view").append($rowClone);
+        }
+    });
+};
+
+mapDrawInit(32, 32); */
+
 var toggleFire = function(on) {
     if (on == 0) {
         $('#fire-view').removeClass('fire-ready').addClass('fire-standby');

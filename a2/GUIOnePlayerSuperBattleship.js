@@ -8,10 +8,10 @@ var helloWorld = function () {
     var str = "Hello world";
     alert(str);
 };
+
 $(document).ready(function () {
-    var game = new SuperBattleship();
-    var gui_player_one = new GUIPlayer(game, $('#p1_cli_input'),
-        $('#p1_cli_output'), $('#p1_view'), true);
-    var ai_player_two = new DumbAI(game, false);
+    var game = new SuperBattleship({boardSize: 32, turnLimit: 1000});
+    var gui_player_one = new GUIPlayer(game, $('#output-view'), $('#p1-view'), true);
+    var ai_player_two = new DumbAI(game, false, 0);
     game.startGame();
 });

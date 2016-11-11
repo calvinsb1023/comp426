@@ -4,6 +4,7 @@ var DumbAI = function(game, is_player_one, delay) {
     } else {
 	key = game.registerPlayerTwo();
     }
+    console.log(key);
 
     var turn_delay = 0;
     if (delay != undefined) {
