@@ -49,26 +49,6 @@ body {
 .map-square {
     width: 19px;
 }
-.map-square:hover, .map-square-selected, .command-button-active:hover {
-    background-color: white;
-    color: lawngreen;
-}
-.visible {  }
-.visible-water {
-    background-color: blue;
-}
-.friendly, .ship-button-selected, .ship-button:hover, .command-button-active {
-    background-color: lawngreen;
-}
-.visible-enemy {
-    background-color: orange;
-}
-.hit, .fire-ready:hover, .fire-ready {
-    background-color: red;
-}
-.miss {
-    background-color: purple;
-}
 .map-row {
     margin-right: auto;
 }
@@ -123,4 +103,23 @@ body {
 #output-view {
     height: 246px;
     overflow-y: auto;
+}
+.visible-water {
+    background-color: blue;
+}
+.friendly, .ship-button-selected, .ship-button:hover, .command-button-active {
+    background-color: lawngreen;
+}
+.miss {
+    background-color: purple;
+}
+.visible-enemy {
+    background-color: orange;
+}
+.hit, .fire-ready:hover, .fire-ready {
+    background-color: red;
+}
+.map-square:hover, .map-square-selected, .command-button-active:hover {
+    background-color: white;
+    color: lawngreen;
 }
