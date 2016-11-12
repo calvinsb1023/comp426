@@ -19,9 +19,14 @@ var DumbAI = function(game, is_player_one, delay) {
 		    //var x = Math.floor(Math.random() * game.getBoardSize());
 		    //var y = Math.floor(Math.random() * game.getBoardSize());
 		    setTimeout(function () {
-				var targetX = Math.floor(Math.random() * game.getBoardSize());
-				var targetY = Math.floor(Math.random() * game.getBoardSize());
 
+		    	var clearedToFire = false;
+				var targetX = 0;
+				var targetY = 0;
+
+				/**
+				 * Will fire on enemy squares when they are seen
+				 */
 				for (var y = 0; y < game.getBoardSize(); y++){
 					for (var x = 0; x < game.getBoardSize(); x++) {
 						var sqr = game.queryLocation(key, x, y);
@@ -33,12 +38,31 @@ var DumbAI = function(game, is_player_one, delay) {
 									$(id).attr("class", "map-square friendly");
 									targetX = x;
 									targetY = y;
+									clearedToFire = true;
 								}
 								break;
-
 						}
 					}
 				}
+
+				/**
+				 * will keep generating firing targets until an invisible square is chosen so it won't waste shots
+				 * or fire at itself
+				 */
+				while(!clearedToFire) {
+					targetX = Math.floor(Math.random() * game.getBoardSize());
+					targetY = Math.floor(Math.random() * game.getBoardSize());
+
+					var sqrTarget = game.queryLocation(key, x, y);
+
+					switch (sqrTarget.type) {
+						case "invisible":
+							clearedToFire = true;
+							break;
+					}
+
+				}
+
 		    	game.shootAt(key, targetX, targetY);
 
 		    }, turn_delay);

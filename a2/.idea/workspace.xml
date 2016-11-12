@@ -25,8 +25,8 @@
             <file leaf-file-name="GUIPlayer.js" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/GUIPlayer.js">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="870">
-                    <caret line="151" column="9" selection-start-line="116" selection-start-column="8" selection-end-line="151" selection-end-column="9" />
+                  <state relative-caret-position="840">
+                    <caret line="133" column="56" selection-start-line="133" selection-start-column="56" selection-end-line="133" selection-end-column="56" />
                     <folding>
                       <element signature="e#80#113#0" expanded="false" />
                       <element signature="e#139#174#0" expanded="false" />
@@ -63,68 +63,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SuperBattleship.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SuperBattleship.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SuperBattleship.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="39" column="65" selection-start-line="39" selection-start-column="65" selection-end-line="39" selection-end-column="65" />
+            <state relative-caret-position="431">
+              <caret line="45" column="68" selection-start-line="45" selection-start-column="68" selection-end-line="45" selection-end-column="68" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="barkerc1AI.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/barkerc1AI.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="31" column="66" selection-start-line="31" selection-start-column="66" selection-end-line="31" selection-end-column="66" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GUIOnePlayerSuperBattleship.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GUIOnePlayerSuperBattleship.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
-              <folding>
-                <element signature="e#0#43#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CLIOnePlayerSuperBattleship.htm" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/One CLI Player Super Battleship_files/CLIOnePlayerSuperBattleship.htm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="114" column="17" selection-start-line="114" selection-start-column="17" selection-end-line="114" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CLIPlayer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/One CLI Player Super Battleship_files/CLIPlayer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="41" column="34" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="34" />
-              <folding>
-                <element signature="e#104#148#0" expanded="false" />
-                <element signature="e#1905#3107#0" expanded="false" />
-                <element signature="e#2304#2965#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -148,10 +92,10 @@
         <option value="$PROJECT_DIR$/One CLI Player Super Battleship_files/DumbAI.js" />
         <option value="$PROJECT_DIR$/GUIOnePlayerSuperBattleship.js" />
         <option value="$PROJECT_DIR$/GUIPlayer.js" />
-        <option value="$PROJECT_DIR$/SuperBattleship.html" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/DumbAI.js" />
         <option value="$PROJECT_DIR$/barkerc1AI.js" />
+        <option value="$PROJECT_DIR$/SuperBattleship.html" />
       </list>
     </option>
   </component>
@@ -326,7 +270,7 @@
       <workItem from="1477667888798" duration="564000" />
       <workItem from="1477781124333" duration="872000" />
       <workItem from="1478255019343" duration="10672000" />
-      <workItem from="1478881375687" duration="15633000" />
+      <workItem from="1478881375687" duration="18343000" />
     </task>
     <servers />
   </component>
@@ -342,7 +286,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52746000" />
+    <option name="totallyTimeSpent" value="55456000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="41" y="23" width="1239" height="777" extended-state="6" />
@@ -758,15 +702,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/barkerc1AI.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="58" column="41" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/One CLI Player Super Battleship_files/CLIPlayer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
+        <state relative-caret-position="-98">
           <caret line="41" column="34" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="34" />
           <folding>
             <element signature="e#104#148#0" expanded="false" />
             <element signature="e#1905#3107#0" expanded="false" />
             <element signature="e#2304#2965#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="114" column="17" selection-start-line="114" selection-start-column="17" selection-end-line="114" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/One CLI Player Super Battleship_files/CLIOnePlayerSuperBattleship.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -780,34 +748,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/One CLI Player Super Battleship_files/CLIOnePlayerSuperBattleship.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="114" column="17" selection-start-line="114" selection-start-column="17" selection-end-line="114" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SuperBattleship.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="39" column="65" selection-start-line="39" selection-start-column="65" selection-end-line="39" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GUIPlayer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="151" column="9" selection-start-line="116" selection-start-column="8" selection-end-line="151" selection-end-column="9" />
+        <state relative-caret-position="840">
+          <caret line="133" column="56" selection-start-line="133" selection-start-column="56" selection-end-line="133" selection-end-column="56" />
           <folding>
             <element signature="e#80#113#0" expanded="false" />
             <element signature="e#139#174#0" expanded="false" />
@@ -832,10 +776,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/barkerc1AI.js">
+    <entry file="file://$PROJECT_DIR$/SuperBattleship.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="31" column="66" selection-start-line="31" selection-start-column="66" selection-end-line="31" selection-end-column="66" />
+        <state relative-caret-position="431">
+          <caret line="45" column="68" selection-start-line="45" selection-start-column="68" selection-end-line="45" selection-end-column="68" />
           <folding />
         </state>
       </provider>
