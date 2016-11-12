@@ -7,11 +7,14 @@ body {
     background-color: black;
 
 }
-#gameboard, #p1-view, #fire-view, #fleet-view, #ship-view, #command-view, #output-view, .top {
+h2, h3, h4 {
+    text-align: center;
+}
+#gameboard, #p1-view, #fire-view, #fleet-view, #ship-view, #command-view, #output-view, .top, h2, h3, h4 {
     margin: auto;
 }
 #gameboard, #p1-view, .map-square, .fire-standby, .fire-ready, #fleet-view,
-    .ship-button, .command, #output-view, #output-view {
+    .ship-button, .command, #output-view, #output-view, #output-header, .ship-sunk {
    // border: solid lightgray 1px;
      border: solid lawngreen 1px;
 }
@@ -59,7 +62,7 @@ body {
 #player-panel {
     width: 440px;
 }
-#fire-view, #fleet-view, #output-view, .ship-button {
+#fire-view, #fleet-view, #output-view, .ship-button, .ship-sunk {
     width: 90%;
 }
 #fire-view {
@@ -67,7 +70,7 @@ body {
     text-align: center;
     font-size: 70px;
 }
-.fire-standby {
+.fire-standby, h2 {
     color: lawngreen;
 }
 .fire-ready:hover, .fire-ready {
@@ -85,9 +88,9 @@ body {
 #ship-view, #command-view {
     height: 240px;
     width: 49%;
-    margin-top: 30px;
+    //margin-top: 30px;
 }
-.ship-button {
+.ship-button, .ship-sunk{
     margin: 12px auto 0 auto;
     height: 33px;
     color: lawngreen;
@@ -106,6 +109,7 @@ body {
     color: lawngreen;
     height: 246px;
     overflow-y: auto;
+
 }
 .visible-water {
     background-color: blue;
@@ -124,6 +128,10 @@ body {
 .miss {
     background-color: purple;
 }
-.hit, .fire-ready:hover, .fire-ready {
+.hit, .ship-sunk .fire-ready:hover, .fire-ready {
     background-color: red;
+}
+.ship-sunk {
+    background-color: red;
+    color: lawngreen;
 }

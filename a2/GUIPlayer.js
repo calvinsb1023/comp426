@@ -78,19 +78,21 @@ var GUIPlayer = function(game, cli_output, map, is_player_one) {
             case SBConstants.SHIP_SUNK_EVENT:
                 var ship = e.ship;
                 if (ship.isMine(key)) {
-                    var pos = ship.getPosition(key);
-                    cli_msg.text("Foe sunk your " + ship.getName() + " at (" + pos.x + ", " + pos.y + ")");
+                    var id = "#"+ship.getName();
+                    $(id).addClass("ship-sunk").removeClass("ship-button");
+                    cli_msg.text("Foe sunk your " + ship.getName());
                 } else {
-                    var pos = ship.getPosition(null); // This works because ship is dead.
-                    cli_msg.text("You sunk their " + ship.getName() + " at (" + pos.x + ", " + pos.y + ")");
+                    cli_msg.text("You sunk their " + ship.getName() );
                 }
                 break;
             case SBConstants.GAME_OVER_EVENT:
                 alert('game over');
                 if (is_player_one && e.winner == SBConstants.PLAYER_ONE) {
                     cli_msg.text("Game over. You win!");
+                    alert("Congrats! You win!")
                 } else {
                     cli_msg.text("Game over. You lose!");
+                    alert("Sorry! You lose.")
                 }
                 break;
         }
@@ -258,13 +260,14 @@ var GUIPlayer = function(game, cli_output, map, is_player_one) {
     });
     $(document).on('click', '.ship-button', function() {
         var id = "#" + this.id;
+        activeShip = game.getShipByName(key, this.id);
         if ($(id).hasClass('ship-button-selected')){
             toggleShipSelection(id, 0);
         } else {
             toggleShipSelection(id, 1);
         }
         console.log(this.id);
-        activeShip = game.getShipByName(key, this.id);
+
 
     });
     $(document).on('click', '.map-square', function() {
