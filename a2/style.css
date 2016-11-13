@@ -5,24 +5,33 @@ body {
     font-family: "Courier New", monospace;
     height: 97%;
     background-color: black;
-
+}
+h2 {
+    height: 33px;
 }
 h2, h3, h4 {
     text-align: center;
+}
+
+p, .cli_msg, .command, .ship-sunk {
+    cursor: default;
+}
+p, .cli_msg {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 #gameboard, #p1-view, #fire-view, #fleet-view, #ship-view, #command-view, #output-view, .top, h2, h3, h4 {
     margin: auto;
 }
 #gameboard, #p1-view, .map-square, .fire-standby, .fire-ready, #fleet-view,
     .ship-button, .command, #output-view, #output-view, #output-header, .ship-sunk {
-   // border: solid lightgray 1px;
      border: solid lawngreen 1px;
 }
 #gameboard {
     width: 1150px;
     height: 675px;
 }
-#map-panel, .map-square, #ship-view, .bottom{
+#map-panel, .map-square, #ship-view, .bottom {
     float: left;
 }
 #map-panel, #player-panel {
@@ -70,8 +79,12 @@ h2, h3, h4 {
     text-align: center;
     font-size: 70px;
 }
-.fire-standby, h2 {
+.fire-standby, h2, .ship-button, .ship-sunk, #output-view, .map-square:hover, .map-square-selected,
+.command-button-active:hover, .ship-sunk {
     color: lawngreen;
+}
+.command-button-active, .ship-button, .fire-ready:hover, .fire-ready, .map-square {
+    cursor: pointer;
 }
 .fire-ready:hover, .fire-ready {
     color: white;
@@ -93,7 +106,6 @@ h2, h3, h4 {
 .ship-button, .ship-sunk{
     margin: 12px auto 0 auto;
     height: 33px;
-    color: lawngreen;
 }
 .command {
     height: 45px;
@@ -106,15 +118,13 @@ h2, h3, h4 {
     margin-top: 50px;
 }
 #output-view {
-    color: lawngreen;
     height: 246px;
     overflow-y: auto;
-
 }
 .visible-water {
     background-color: blue;
 }
-.friendly, .ship-button-selected, .ship-button:hover, .command-button-active {
+.friendly, .ship-button-selected, .ship-button-selected > h2, .ship-button:hover > h2, .command-button-active {
     background-color: lawngreen;
     color: black;
 }
@@ -123,15 +133,10 @@ h2, h3, h4 {
 }
 .map-square:hover, .map-square-selected, .command-button-active:hover {
     background-color: white;
-    color: lawngreen;
 }
 .miss {
     background-color: purple;
 }
-.hit, .ship-sunk .fire-ready:hover, .fire-ready {
+.hit, .ship-sunk .fire-ready:hover, .fire-ready, .ship-sunk {
     background-color: red;
-}
-.ship-sunk {
-    background-color: red;
-    color: lawngreen;
 }

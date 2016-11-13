@@ -86,7 +86,6 @@ var GUIPlayer = function(game, cli_output, map, is_player_one) {
                 }
                 break;
             case SBConstants.GAME_OVER_EVENT:
-                alert('game over');
                 if (is_player_one && e.winner == SBConstants.PLAYER_ONE) {
                     cli_msg.text("Game over. You win!");
                     alert("Congrats! You win!")
@@ -96,6 +95,7 @@ var GUIPlayer = function(game, cli_output, map, is_player_one) {
                 }
                 break;
         }
+        //cli_output.empty();
         cli_output.prepend(cli_msg);
     };
 

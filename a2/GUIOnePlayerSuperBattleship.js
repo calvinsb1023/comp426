@@ -11,7 +11,7 @@ var helloWorld = function () {
 
 $(document).ready(function () {
     var game = new SuperBattleship({boardSize: 32, turnLimit: 1000});
-    var gui_player_one = new GUIPlayer(game, $('#output-view'), $('#p1-view'), true);
+    var gui_player_one = new GUIPlayer(game, $('#move-status'), $('#p1-view'), true);
     var ai_player_two = new DumbAI(game, false, 300);
     game.startGame();
 });
