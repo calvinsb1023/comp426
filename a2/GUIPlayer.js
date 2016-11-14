@@ -163,29 +163,8 @@ var GUIPlayer = function(game, cli_output, map, is_player_one) {
 
     /**
      * helper functions for manipulating visuals
-     * @param on
      */
 
-    var activeShip = null;
-    var toggleFire = function(on) {
-        if (on == 0) {
-            $('#title-view').removeClass('fire-ready').addClass('fire-standby');
-        } else {
-            $('#title-view').removeClass('fire-standby').addClass('fire-ready');
-        }
-    };
-    var toggleSquareSelection = function(id, on) {
-        if (on == 1) {
-            $('.map-square-selected').removeClass('map-square-selected');
-            $('.ship-button-selected').removeClass('ship-button-selected');
-            $('.command-button-active').removeClass('command-button-active');
-            $(id).addClass('map-square-selected');
-            toggleFire(on);
-        } else {
-            $('.map-square-selected').removeClass('map-square-selected');
-            toggleFire(on);
-        }
-    };
     var toggleCommandSelection = function (on) {
         if (on == 1) {
             $('.command').addClass('command-button-active');
@@ -195,11 +174,8 @@ var GUIPlayer = function(game, cli_output, map, is_player_one) {
     };
     var toggleShipSelection = function(id, on) {
         if (on == 1) {
-            toggleFire(0);
             $('.ship-button-selected').removeClass('ship-button-selected');
             $(id).addClass('ship-button-selected');
-            // TODO: handle changing classes of ships on the gameboard
-            toggleSquareSelection(-1, 0);
             toggleCommandSelection(1);
         } else {
             $(id).removeClass('ship-button-selected');
@@ -214,6 +190,7 @@ var GUIPlayer = function(game, cli_output, map, is_player_one) {
     /**
      * Handle ship movements
      */
+    var activeShip = null;
     $(document).on('click', '.command-button-active', function() {
         var id = this.id;
         console.log(this.id);
@@ -232,33 +209,26 @@ var GUIPlayer = function(game, cli_output, map, is_player_one) {
                 game.rotateShipCW(key, activeShip);
                 break;
         }
-
-
     });
 
-    /**
-     * Handles firing commands
-     */
-    $(document).on('click', '.fire-ready', function() {
-        var id = $('.map-square-selected').attr('id');
-        var x = getX(id);
-        var y = getY(id);
-        game.shootAt(key, x, y);
-        toggleFire(0);
-        toggleSquareSelection(id, 0);
-    });
     $(document).on('click', '.ship-button', function() {
         var id = "#" + this.id;
         activeShip = game.getShipByName(key, this.id);
+        console.log(game.getFleetByKey(key)[0].getName());
+        console.log(game.getFleetByKey(key)[1].getName());
+        console.log(activeShip.getPosition(key));
+        //alert(1);
         if ($(id).hasClass('ship-button-selected')){
             toggleShipSelection(id, 0);
         } else {
             toggleShipSelection(id, 1);
         }
         console.log(this.id);
-
-
     });
+
+    /**
+     * Handles firing commands
+     */
     $(document).on('click', '.map-square', function() {
         var id = this.id;
         var x = getX(id);
