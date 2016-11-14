@@ -169,9 +169,9 @@ var GUIPlayer = function(game, cli_output, map, is_player_one) {
     var activeShip = null;
     var toggleFire = function(on) {
         if (on == 0) {
-            $('#fire-view').removeClass('fire-ready').addClass('fire-standby');
+            $('#title-view').removeClass('fire-ready').addClass('fire-standby');
         } else {
-            $('#fire-view').removeClass('fire-standby').addClass('fire-ready');
+            $('#title-view').removeClass('fire-standby').addClass('fire-ready');
         }
     };
     var toggleSquareSelection = function(id, on) {
@@ -204,15 +204,6 @@ var GUIPlayer = function(game, cli_output, map, is_player_one) {
         } else {
             $(id).removeClass('ship-button-selected');
             toggleCommandSelection(0);
-        }
-    };
-
-    //TODO: handle map ship classes
-    var shipClick = function(id, on) {
-        if (on == 1) {
-
-        } else {
-
         }
     };
 
@@ -250,8 +241,6 @@ var GUIPlayer = function(game, cli_output, map, is_player_one) {
      */
     $(document).on('click', '.fire-ready', function() {
         var id = $('.map-square-selected').attr('id');
-        //alert('test');
-        //TODO: call the fire function
         var x = getX(id);
         var y = getY(id);
         game.shootAt(key, x, y);
@@ -271,11 +260,9 @@ var GUIPlayer = function(game, cli_output, map, is_player_one) {
 
     });
     $(document).on('click', '.map-square', function() {
-        var id = '#' + this.id;
-        if($(id).hasClass('map-square-selected')) {
-            toggleSquareSelection(id, 0);
-        } else {
-            toggleSquareSelection(id, 1);
-        }
+        var id = this.id;
+        var x = getX(id);
+        var y = getY(id);
+        game.shootAt(key, x, y);
     });
 };

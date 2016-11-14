@@ -9,10 +9,12 @@ body {
 h2 {
     height: 33px;
 }
-h2, h3, h4 {
+h2, h3, h4, h6 {
     text-align: center;
 }
-
+h6 {
+    font-size: 50%;
+}
 p, .cli_msg, .command, .ship-sunk, h4 {
     cursor: default;
 }
@@ -20,10 +22,14 @@ p, .cli_msg {
     margin-left: 10px;
     margin-right: 10px;
 }
-#gameboard, #p1-view, #fire-view, #fleet-view, #ship-view, #command-view, #output-view, .top, h2, h3, h4 {
+a {
+    text-decoration: none;
+}
+#gameboard, #p1-view, #title-view, #fleet-view, #ship-view, #command-view, #output-view, .top,
+h2, h3, h4, h6{
     margin: auto;
 }
-#gameboard, #p1-view, .map-square, .fire-standby, .fire-ready, #fleet-view,
+#gameboard, #p1-view, .map-square, .fire-standby, #fleet-view,
     .ship-button, .command, #output-view, #output-view, #output-header, .ship-sunk {
      border: solid lawngreen 1px;
 }
@@ -49,7 +55,7 @@ p, .cli_msg {
 #map-view, .map-row {
     margin-left: auto;
 }
-#map-view, #fire-view {
+#map-view, #title-view {
     margin-top: 15px;
 }
 #p1-view {
@@ -71,25 +77,25 @@ p, .cli_msg {
 #player-panel {
     width: 440px;
 }
-#fire-view, #fleet-view, #output-view, .ship-button, .ship-sunk {
+#title-view, #fleet-view, #output-view, .ship-button, .ship-sunk {
     width: 90%;
 }
-#fire-view {
+#title-view {
     height: 75px;
     text-align: center;
     font-size: 70px;
 }
-.fire-standby, h2, .ship-button, .ship-sunk, #output-view, .map-square:hover, .map-square-selected,
+.fire-standby, h2, .ship-button, .ship-sunk, #output-view, .map-square-selected,
 .command-button-active:hover, .ship-sunk {
     color: lawngreen;
 }
-.command-button-active, .ship-button, .fire-ready:hover, .fire-ready, .fire-ready > h4, .map-square {
+.command-button-active, .ship-button, .map-square {
     cursor: pointer;
 }
-.fire-ready:hover, .fire-ready {
+.fire-standby:hover, .fire-ready {
     color: white;
 }
-.fire-ready:hover {
+.fire-standby:hover, .map-square:hover {
     border: solid red 1px;
 }
 #fleet-view, #output-view {
@@ -131,12 +137,15 @@ p, .cli_msg {
 .visible-enemy {
     background-color: orange;
 }
-.map-square:hover, .map-square-selected, .command-button-active:hover {
+.map-square-selected, .command-button-active:hover {
     background-color: white;
 }
 .miss {
     background-color: purple;
 }
-.hit, .ship-sunk .fire-ready:hover, .fire-ready, .ship-sunk {
+.map-square:hover, .hit, .ship-sunk, .fire-standby:hover {
     background-color: red;
+}
+::-webkit-scrollbar {
+    display: none;
 }
