@@ -13,7 +13,7 @@ h2, h3, h4 {
     text-align: center;
 }
 
-p, .cli_msg, .command, .ship-sunk {
+p, .cli_msg, .command, .ship-sunk, h4 {
     cursor: default;
 }
 p, .cli_msg {
@@ -83,7 +83,7 @@ p, .cli_msg {
 .command-button-active:hover, .ship-sunk {
     color: lawngreen;
 }
-.command-button-active, .ship-button, .fire-ready:hover, .fire-ready, .map-square {
+.command-button-active, .ship-button, .fire-ready:hover, .fire-ready, .fire-ready > h4, .map-square {
     cursor: pointer;
 }
 .fire-ready:hover, .fire-ready {
