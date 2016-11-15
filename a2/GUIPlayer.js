@@ -79,7 +79,7 @@ var GUIPlayer = function(game, cli_output, map, is_player_one) {
                 var ship = e.ship;
                 if (ship.isMine(key)) {
                     var id = "#"+ship.getName();
-                    $(id).addClass("ship-sunk").removeClass("ship-button");
+                    $(id).addClass("ship-sunk").removeClass("ship-button").removeClass("ship-button-selected");
                     cli_msg.text("Foe sunk your " + ship.getName());
                 } else {
                     cli_msg.text("You sunk their " + ship.getName() );
