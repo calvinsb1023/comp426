@@ -48,8 +48,8 @@ var GUIPlayer = function(game, cli_output, map, is_player_one) {
      */
     if (is_player_one) {
         var key = game.registerPlayerOne();
-        console.log(key);
-        console.log(game.getPlayerOneFleet());
+        //console.log(key);
+        //console.log(game.getPlayerOneFleet());
     } else {
         key = game.registerPlayerTwo();
     }
@@ -214,8 +214,6 @@ var GUIPlayer = function(game, cli_output, map, is_player_one) {
     $(document).on('click', '.ship-button', function() {
         var id = "#" + this.id;
         activeShip = game.getShipByName(key, this.id);
-        console.log(game.getFleetByKey(key)[0].getName());
-        console.log(game.getFleetByKey(key)[1].getName());
         console.log(activeShip.getPosition(key));
         //alert(1);
         if ($(id).hasClass('ship-button-selected')){
