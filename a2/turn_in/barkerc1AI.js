@@ -16,7 +16,7 @@ var DumbAI = function(game, is_player_one, delay) {
 
 		var needsMoreAction = true;
 	switch (e.event_type) {
-		case SBConstants.HIT_EVENT:
+		/*case SBConstants.HIT_EVENT:
 
 				setTimeout(function(){
 					var goingToFire = false;
@@ -32,7 +32,6 @@ var DumbAI = function(game, is_player_one, delay) {
 										$(id).attr("class", "map-square friendly");
 										game.shootAt(key, x, y);
 										goingToFire = true;
-										needsMoreAction = false;
 									}
 									break;
 							}
@@ -42,69 +41,37 @@ var DumbAI = function(game, is_player_one, delay) {
 
 					console.log("hit event: " + e.ship.getName());
 					if (!goingToFire) {
-						var attempt = 0;
-						do {
-							attempt++;
-							var action = Math.floor(Math.random() * (4));
+						if (game.rotateShipCW(key, e.ship)) {
+							console.log("hit rotation: " + e.ship.getName());
+							needsMoreAction = false;
+						} else if (game.moveShipForward(key, e.ship)) {
+							console.log("hit fwd: " + e.ship.getName());
+							needsMoreAction = false;
+						} else if (game.moveShipBackward(key, e.ship)) {
+							console.log("hit back: " + e.ship.getName());
+							needsMoreAction = false;
+						} else {
+							var fired = false;
 
-							switch (action) {
-								case 0:
-									if (game.rotateShipCW(key, e.ship)) {
-										console.log("hit rotation: " + e.ship.getName());
-										needsMoreAction = false;
+							do {
+								var targetX = Math.floor(Math.random() * game.getBoardSize());
+								var targetY = Math.floor(Math.random() * game.getBoardSize());
 
-									}
-									break;
-								case 1:
-									if (game.rotateShipCCW(key, e.ship)) {
-										console.log("hit rotation: " + e.ship.getName());
-										needsMoreAction = false;
+								var sqrTarget = game.queryLocation(key, targetX, targetY);
 
-									}
-									break;
-								case 2:
-									if (game.moveShipForward(key, e.ship)) {
-										console.log("hit movement: " + e.ship.getName());
-										needsMoreAction = false;
-									}
-									break;
-							}
+								if(sqrTarget.type == "invisible"){
+									game.shootAt(key, targetX, targetY);
+									needsMoreAction = false;
+									fired = true;
 
-							if (game.rotateShipCW(key, e.ship)) {
-								console.log("hit rotation: " + e.ship.getName());
-								needsMoreAction = false;
-							} else if (game.moveShipForward(key, e.ship)) {
-								console.log("hit fwd: " + e.ship.getName());
-								needsMoreAction = false;
-							} else if (game.moveShipBackward(key, e.ship)) {
-								console.log("hit back: " + e.ship.getName());
-								needsMoreAction = false;
-							} else if (needsMoreAction) {
-								var fired = false;
+								}
 
-								do {
-									var targetX = Math.floor(Math.random() * game.getBoardSize());
-									var targetY = Math.floor(Math.random() * game.getBoardSize());
-
-									var sqrTarget = game.queryLocation(key, targetX, targetY);
-
-									if(sqrTarget.type == "invisible"){
-										console.log("hit random firing");
-										game.shootAt(key, targetX, targetY);
-										needsMoreAction = false;
-										fired = true;
-
-
-									}
-
-								} while (!fired);
-							}
-						} while (needsMoreAction);
-
+							} while (!fired);
+						}
 					}
 
 				}, turn_delay);
-				break;
+				break;*/
 
 	case SBConstants.TURN_CHANGE_EVENT:
 	    if (needsMoreAction && (((e.who == SBConstants.PLAYER_ONE) && is_player_one) ||
@@ -242,10 +209,8 @@ var DumbAI = function(game, is_player_one, delay) {
 
 						switch (sqrTarget.type) {
 							case "invisible":
-								console.log("non hit random fire");
 								goingToFire = true;
 								game.shootAt(key, targetX, targetY);
-								goingToFire = true;
 								break;
 						}
 
@@ -267,8 +232,8 @@ var DumbAI = function(game, is_player_one, delay) {
 		eventHandler);
 	game.registerEventHandler(SBConstants.MISS_EVENT,
 		eventHandler);
-	//game.registerEventHandler(SBConstants.SHIP_SUNK_EVENT,
-	//	eventHandler);
+	game.registerEventHandler(SBConstants.SHIP_SUNK_EVENT,
+		eventHandler);
 	game.registerEventHandler(SBConstants.GAME_OVER_EVENT,
 		eventHandler);
 

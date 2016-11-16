@@ -1,0 +1,150 @@
+html {
+    height: 100%;
+}
+body {
+    font-family: "Courier New", monospace;
+    height: 97%;
+    background-color: black;
+}
+h2 {
+    height: 33px;
+}
+h2, h3, h4, h6 {
+    text-align: center;
+}
+h6 {
+    font-size: 50%;
+}
+p, .cli_msg, .command, .ship-sunk, h4 {
+    cursor: default;
+}
+p, .cli_msg {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+a {
+    text-decoration: none;
+}
+#gameboard, #p1-view, #title-view, #fleet-view, #ship-view, #command-view, #output-view, .top,
+h2, h3, h4, h6{
+    margin: auto;
+}
+#gameboard, #p1-view, .map-square, .title, #fleet-view,
+    .ship-button, .command, #output-view, #output-view, #output-header, .ship-sunk {
+     border: solid lawngreen 1px;
+}
+#gameboard {
+    width: 1150px;
+    height: 675px;
+}
+#map-panel, .map-square, #ship-view, .bottom {
+    float: left;
+}
+#map-panel, #player-panel {
+    height: 673px;
+}
+#map-panel {
+    width: 700px;
+}
+#map-view, #p1-view, .map-row {
+    width: auto;
+}
+#map-view, #p1-view {
+    height: auto;
+}
+#map-view, .map-row {
+    margin-left: auto;
+}
+#map-view, #title-view {
+    margin-top: 15px;
+}
+#p1-view {
+    display: table;
+    border-collapse: collapse;
+}
+.map-square, .map-row {
+    height: 18px;
+}
+.map-square {
+    width: 19px;
+}
+.map-row {
+    margin-right: auto;
+}
+#player-panel, #command-view {
+    float: right;
+}
+#player-panel {
+    width: 440px;
+}
+#title-view, #fleet-view, #output-view, .ship-button, .ship-sunk {
+    width: 90%;
+}
+#title-view {
+    height: 75px;
+    text-align: center;
+    font-size: 70px;
+}
+.title, h2, .ship-button, .ship-sunk, #output-view, .map-square-selected,
+.command-button-active:hover, .ship-sunk {
+    color: lawngreen;
+}
+.command-button-active, .ship-button, .map-square {
+    cursor: pointer;
+}
+.title:hover {
+    color: white;
+}
+.title:hover, .map-square:hover {
+    border: solid red 1px;
+}
+#fleet-view, #output-view {
+    margin-top: 20px;
+}
+#fleet-view {
+    height: 275px;
+}
+#ship-view, #command-view {
+    height: 240px;
+    width: 49%;
+}
+.ship-button, .ship-sunk{
+    margin: 12px auto 0 auto;
+    height: 33px;
+}
+.command {
+    height: 45px;
+    width: 45px;
+}
+.bottom {
+    margin: 14px 8px 0 9px;
+}
+.top {
+    margin-top: 50px;
+}
+#output-view {
+    height: 246px;
+    overflow-y: auto;
+}
+.visible-water {
+    background-color: blue;
+}
+.friendly, .ship-button-selected, .ship-button-selected > h2, .ship-button:hover > h2, .command-button-active {
+    background-color: lawngreen;
+    color: black;
+}
+.visible-enemy {
+    background-color: orange;
+}
+.map-square-selected, .command-button-active:hover {
+    background-color: white;
+}
+.miss {
+    background-color: purple;
+}
+.map-square:hover, .hit, .ship-sunk, .title:hover {
+    background-color: red;
+}
+::-webkit-scrollbar {
+    display: none;
+}
