@@ -1,0 +1,3 @@
+SELECT COUNT(*) 
+FROM `a3` 
+WHERE `CourseName`='COMP 426'
