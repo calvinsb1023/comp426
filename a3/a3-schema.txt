@@ -1,3 +1,20 @@
+/**
+ * Calvin Barker
+ * barkerc1
+ * 720391993
+ *
+ * (StudentFirstName, StudentLastName, CourseName, Semester) was choosen as the
+ * primary key since a student cannot take a class more than once during a given
+ * semester.
+ *
+ * If dealing with the full student body and its courses, it would be better for 
+ * size and performance to split into maybe three tables: 1) Students, 2) 
+ * Professors, 3) Courses, each with foreign keys that point to each other to 
+ * reflect enrollment and instructors, but since there are only 300 records, a 
+ * single table suffices.
+ *
+ */
+
 table `a3` schema
 
 `StudentFirstName`, varchar(11), PRIMARY KEY
@@ -9,8 +26,3 @@ table `a3` schema
 `ProfessorLastName`, varchar(11)
 `ExamDate`, date
 
-/**
- * (StudentFirstName, StudentLastName, CourseName, Semester) was choosen as the
- * primary key since a student cannot take a class more than once during a given
- * semester.
- */
