@@ -1,0 +1,16 @@
+table `a3` schema
+
+`StudentFirstName`, varchar(11), PRIMARY KEY
+`StudentLastName`, varchar(10), PRIMARY KEY
+`CourseName`, varchar(8), PRIMARY KEY
+`Semester`, varchar(3), PRIMARY KEY
+`SectionNumber`, int(3)
+`ProfessorFirstName`, varchar(8)
+`ProfessorLastName`, varchar(11)
+`ExamDate`, date
+
+/**
+ * (StudentFirstName, StudentLastName, CourseName, Semester) was choosen as the
+ * primary key since a student cannot take a class more than once during a given
+ * semester.
+ */
